@@ -1,4 +1,4 @@
-# Fakebook
+# PGP
 
 A theme for Discourse.
 
