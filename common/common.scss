@@ -1201,3 +1201,11 @@ padding:5px;
 .q-click-wrapper{
   margin-left:3px;
 }
+
+#reply-control .d-editor-button-bar button {
+    display: none;
+}
+#reply-control .d-editor-button-bar button.upload {
+    display: block;
+}
+
