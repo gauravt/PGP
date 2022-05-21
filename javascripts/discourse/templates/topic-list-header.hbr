@@ -95,6 +95,10 @@
 </div>
  {{/unless}}
  
+ {{#if user}}
+  <a class="sidebar-link" href="/my/summary">{{i18n (theme-prefix "sidebar.full_profile")}}</a>
+  {{/if}}
+ 
 <script async type="text/javascript">
 jQuery(document).ready(function(){
 jQuery('#askqa button').click(function(){
