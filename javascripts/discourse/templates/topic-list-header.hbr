@@ -1,4 +1,5 @@
- {{#unless user}}
+{{#double-clickable}}
+{{#unless user}}
 <div id="askqa">
   <div class="q-box qu-borderAll qu-borderRadius--small qu-borderColor--raised qu-boxShadow--small qu-mb--small qu-hover--borderColor--gray_medium qu-bg--raised" style="box-sizing: border-box;">
     <div class="q-box" style="box-sizing: border-box; position: relative;">
@@ -95,9 +96,7 @@
 </div>
  {{/unless}}
  
- {{#if user}}
-  <a class="sidebar-link" href="/my/summary">{{i18n (theme-prefix "sidebar.full_profile")}}</a>
-  {{/if}}
+{{/double-clickable}}
  
 <script async type="text/javascript">
 jQuery(document).ready(function(){
@@ -105,5 +104,14 @@ jQuery('#askqa button').click(function(){
 	jQuery('#create-topic').click();
 });
 });
+
+import Component from '@ember/component';
+
+export default Component.extend({
+  doubleClick() {
+    alert('DoubleClickableComponent was clicked!');
+  }
+});
+
 </script>
 {{!-- Remove topic list header --}}
