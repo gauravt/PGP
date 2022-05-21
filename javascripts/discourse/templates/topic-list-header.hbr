@@ -1,4 +1,4 @@
-{{#double-clickable}}
+
 {{#unless user}}
 <div id="askqa">
   <div class="q-box qu-borderAll qu-borderRadius--small qu-borderColor--raised qu-boxShadow--small qu-mb--small qu-hover--borderColor--gray_medium qu-bg--raised" style="box-sizing: border-box;">
@@ -95,8 +95,7 @@
   </div>
 </div>
  {{/unless}}
- 
-{{/double-clickable}}
+
  
 <script async type="text/javascript">
 jQuery(document).ready(function(){
