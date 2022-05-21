@@ -1,3 +1,4 @@
+ {{#unless user}}
 <div id="askqa">
   <div class="q-box qu-borderAll qu-borderRadius--small qu-borderColor--raised qu-boxShadow--small qu-mb--small qu-hover--borderColor--gray_medium qu-bg--raised" style="box-sizing: border-box;">
     <div class="q-box" style="box-sizing: border-box; position: relative;">
@@ -92,7 +93,8 @@
     </div>
   </div>
 </div>
-
+ {{/unless}}
+ 
 <script async type="text/javascript">
 jQuery(document).ready(function(){
 jQuery('#askqa button').click(function(){
