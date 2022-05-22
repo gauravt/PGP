@@ -103,12 +103,10 @@
     const user = api.getCurrentUser(),
       username = user.username;
 
-    alert('Hello there '+username+"!")
+    console.log('Hello there '+username+"!")
   });
   
-jQuery('#askqa button').click(function(){
-	jQuery('#create-topic').click();
-});
+
 </script>
 {{!-- Remove topic list header --}}
  
