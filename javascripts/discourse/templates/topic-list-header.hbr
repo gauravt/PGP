@@ -98,7 +98,7 @@
  {{/unless}}
 
  
-<script  type="text/discourse-plugin">
+<script  type="text/discourse-plugin" version="0.8">
 jQuery('#askqa button').click(function(){
 	jQuery('#create-topic').click();
 });
