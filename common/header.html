@@ -39,11 +39,11 @@ api.createWidget("banner", {
   tagName: "div.wrap",
   html() {
     let contents = [];
-    contents.push(h("div.hc-column","Più siamo più funziona. Condividi con i tuoi amici, è gratis!"));
-    contents.push(h("div.hc-column","Fai login e pubblica la tua richiesta di aiuto"));
-    contents.push(h("div.hc-column","Vuoi aiutare? Cerca i Wisper nella tua città"));
+    contents.push(h("div.hc-column"," siamo  funziona. Condividi con i tuoi amic"));
+    contents.push(h("div.hc-column","Fai login e pubblica la tua richiesta di "));
+    contents.push(h("div.hc-column","Vuo"));
     let row1 = h("div.row-cont", contents);
-    let h1 = h('div.top-spot',h('h1','myWisper è un luogo dove offrire e cercare aiuto'));
+    let h1 = h('div.top-spot',h('h1',' luogo dove offrire e cercare aiuto'));
     let inner = [];
     let bottoni = [];
     bottoni.push(h("div.hc-column",this.attach('modal-button','Invita')))
@@ -58,14 +58,14 @@ api.createWidget("banner", {
 api.createWidget("banner_mobile", {
   tagName: "div.wrap",
   html() {
-    let h1 = h('div.top-spot',h('h1','myWisper è un luogo dove offrire e chiedere aiuto.'));
+    let h1 = h('div.top-spot',h('h1','myWisper dove offrire e chiedere aiuto.'));
     let inner = [];
     let bottoni = [];
     bottoni.push(h("div.hc-column-mobile",this.attach('modal-button','Invita')))
     bottoni.push(h("div.hc-column-mobile",this.attach('modal-button','+ Nuovo Wisper')))
     bottoni.push(h("div.hc-column-mobile",this.attach('modal-button','Aiuta')))
     let row2 = h("div.row-cont", bottoni);
-    inner.push(h("h1.mobile-header","myWisper è un luogo dove offrire e chiedere aiuto"));
+    inner.push(h("h1.mobile-header","myWisper ogo dove offrire e chiedere aiuto"));
     inner.push(row2);
     return h("div.hc-banner-mobile",inner);
   },
