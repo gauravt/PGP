@@ -112,5 +112,6 @@
   
   console.log(user)
 </script>
+{{mount-widget widget="banner"}}
 {{!-- Remove topic list header --}}
  
