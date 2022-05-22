@@ -20,7 +20,7 @@ api.createWidget("modal-button", {
     return arg;
   },
   click(arg) {
-      if(arg.target.innerText=="Nuovo Wisper") {
+      if(arg.target.innerText=="New Topic") {
         $('#create-topic').click();
       } else if( arg.target.innerText== "Aiuta" ) {
           window.location.replace("/c/supporto/11");
@@ -50,21 +50,6 @@ api.createWidget("banner", {
   },
 });
 
-api.createWidget("banner_mobile", {
-  tagName: "div.wrap",
-  html() {
-    let h1 = h('div.top-spot',h('h1','myWisper dove offrire e chiedere aiuto.'));
-    let inner = [];
-    let bottoni = [];
-    bottoni.push(h("div.hc-column-mobile",this.attach('modal-button','Invita')))
-    bottoni.push(h("div.hc-column-mobile",this.attach('modal-button','+ Nuovo Wisper')))
-    bottoni.push(h("div.hc-column-mobile",this.attach('modal-button','Aiuta')))
-    let row2 = h("div.row-cont", bottoni);
-    inner.push(h("h1.mobile-header","myWisper ogo dove offrire e chiedere aiuto"));
-    inner.push(row2);
-    return h("div.hc-banner-mobile",inner);
-  },
-});
 </script>
 
 
