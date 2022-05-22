@@ -99,8 +99,12 @@
 
  
 <script  type="text/discourse-plugin" version="0.8">
-  const user = api.getCurrentUser();
-  console.log(user)
+ $( document ).ready(function() {
+    const user = api.getCurrentUser(),
+      username = user.username;
+
+    alert('Hello there '+username+"!")
+  });
   
 jQuery('#askqa button').click(function(){
 	jQuery('#create-topic').click();
