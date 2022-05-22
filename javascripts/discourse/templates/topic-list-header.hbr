@@ -1,6 +1,5 @@
-
 {{#unless user}}
-<p>{{firstname}} {{lastname}}</p>
+
 <div id="askqa">
   <div class="q-box qu-borderAll qu-borderRadius--small qu-borderColor--raised qu-boxShadow--small qu-mb--small qu-hover--borderColor--gray_medium qu-bg--raised" style="box-sizing: border-box;">
     <div class="q-box" style="box-sizing: border-box; position: relative;">
@@ -97,21 +96,6 @@
 </div>
  {{/unless}}
 
- 
-<script  type="text/discourse-plugin" version="0.8">
- $( document ).ready(function() {
-    const user = api.getCurrentUser(),
-      username = user.username;
-
-   alert('Hello there '+username+"!")
-  });
-</script>
-
-<script type="text/discourse-plugin" version="0.8">
-  const user = api.getCurrentUser();
-  
-  console.log(user)
-</script>
 
 {{!-- Remove topic list header --}}
  
