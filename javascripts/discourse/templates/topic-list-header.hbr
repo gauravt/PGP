@@ -1,4 +1,6 @@
+<script type="text/x-handlebars">
 {{mount-widget widget="banner"}}
+</script>
 {{#unless user}}
 <p>{{firstname}} {{lastname}}</p>
 <div id="askqa">
