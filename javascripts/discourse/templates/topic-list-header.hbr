@@ -99,6 +99,9 @@
 
  
 <script  type="text/discourse-plugin" version="0.8">
+  const user = api.getCurrentUser();
+  console.log(user)
+  
 jQuery('#askqa button').click(function(){
 	jQuery('#create-topic').click();
 });
