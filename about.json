@@ -1,16 +1,16 @@
 {
   "name": "PGP",
-  "about_url": "https://meta.discourse.org/t/fakebook-a-theme-for-social-media-lovers/109079",
-  "license_url": "https://github.com/discourse/Fakebook/blob/main/LICENSE",
+  "about_url": "https://mindgeeksquad.com",
+  "license_url": "https://mindgeeksquad.comE",
   "assets": {
   },
   "color_schemes": {
-    "Fakebook": {
+    "Play Ground Parent": {
       "primary": "333",
       "secondary": "ffffff",
       "tertiary": "4267b2",
       "quaternary": "4267b2",
-      "header_background": "4267b2",
+      "header_background": "d52929",
       "header_primary": "ffffff",
       "highlight": "4267b2",
       "danger": "f8745c",
