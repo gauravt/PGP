@@ -105,8 +105,12 @@
 
     console.log('Hello there '+username+"!")
   });
-  
+</script>
 
+<script type="text/discourse-plugin" version="0.8">
+  const user = api.getCurrentUser();
+  
+  console.log(user)
 </script>
 {{!-- Remove topic list header --}}
  
