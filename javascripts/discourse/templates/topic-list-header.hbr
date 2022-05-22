@@ -1,5 +1,4 @@
 
-{{mount-widget widget="home-logo"}}
 {{#unless user}}
 <p>{{firstname}} {{lastname}}</p>
 <div id="askqa">
