@@ -20,11 +20,11 @@ api.createWidget("modal-button", {
     return arg;
   },
   click(arg) {
-      if(arg.target.innerText=="New Topic") {
+      if(arg.target.innerText=="Ask") {
         $('#create-topic').click();
-      } else if( arg.target.innerText== "Aiutaw" ) {
+      } else if( arg.target.innerText== "Answer" ) {
           $('#create-topic').click();
-      } else {
+      } else if( arg.target.innerText== "Post" ) {
            $('#create-topic').click();
       }
   }
@@ -39,9 +39,9 @@ api.createWidget("askqa", {
     let h1 = h('div.top-spot',h('h1',' luogo dove offrire e cercare aiuto'));
     let inner = [];
     let bottoni = [];
-    //bottoni.push(h("div.hc-column",this.attach('modal-button','Invita')))
-    bottoni.push(h("div.hc-column",this.attach('modal-button','+ New Topic')))
-    //bottoni.push(h("div.hc-column",this.attach('modal-button','Aiuta')))
+    //bottoni.push(h("div.hc-column",this.attach('modal-button','Ask')))
+    bottoni.push(h("div.hc-column",this.attach('modal-button','Answer')))
+    //bottoni.push(h("div.hc-column",this.attach('modal-button','Post')))
     let row2 = h("div.row-cont", bottoni);
     inner.push(h1,row1,row2);
     return h("div.hc-banner",inner);
