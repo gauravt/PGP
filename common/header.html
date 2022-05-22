@@ -1,7 +1,6 @@
 <script type="text/discourse-plugin" version="0.8">
   const { htmlSafe } = require("@ember/template");
   const { findRawTemplate } = require("discourse-common/lib/raw-templates");
-
   api.modifyClass('component:topic-list-item', {
     renderTopicListItem() {
       const template = findRawTemplate("list/custom-topic-list-item");
@@ -13,7 +12,6 @@
 
 let currentLocale = I18n.currentLocale();
 I18n.translations[currentLocale].js.custom_modal_title = “My custom modal”;
-
 const showModal = require("discourse/lib/show-modal").default;
 const h = require("virtual-dom").h;
 api.createWidget("modal-button", {
