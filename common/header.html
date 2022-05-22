@@ -36,14 +36,14 @@ api.createWidget("askqa", {
     let contents = [];
     contents.push(h("div.hc-column",'rrrrrrrr'));
     let row1 = h("div.row-cont", contents);
-    let h1 = h('div.top-spot',h('h1',' luogo dove offrire e cercare aiuto'));
+    //let h1 = h('div.top-spot',h('h1',' luogo dove offrire e cercare aiuto'));
     let inner = [];
     let bottoni = [];
-    //bottoni.push(h("div.hc-column",this.attach('modal-button','Ask')))
+    bottoni.push(h("div.hc-column",this.attach('modal-button','Ask')))
     bottoni.push(h("div.hc-column",this.attach('modal-button','Answer')))
-    //bottoni.push(h("div.hc-column",this.attach('modal-button','Post')))
+    bottoni.push(h("div.hc-column",this.attach('modal-button','Post')))
     let row2 = h("div.row-cont", bottoni);
-    inner.push(h1,row1,row2);
+    inner.push(row1,row2);
     return h("div.hc-banner",inner);
   },
 });
