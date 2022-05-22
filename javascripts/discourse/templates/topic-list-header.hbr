@@ -97,21 +97,10 @@
  {{/unless}}
 
  
-<script async type="text/javascript">
-jQuery(document).ready(function(){
+<script  type="text/discourse-plugin">
 jQuery('#askqa button').click(function(){
 	jQuery('#create-topic').click();
 });
-});
-
-import Component from '@ember/component';
-
-export default Component.extend({
-  doubleClick() {
-    alert('DoubleClickableComponent was clicked!');
-  }
-});
-
 </script>
 {{!-- Remove topic list header --}}
  
