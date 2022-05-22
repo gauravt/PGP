@@ -1,6 +1,6 @@
 
 {{#unless user}}
-{{d-button action=(route-action “showCreateAccount”) class=“btn-primary sign-up-button” label=“TEST”}}
+{{d-button action=(route-action “showCreateAccount”) class=“btn-primary sign-up-button” label=“sign_up”}}
 <div id="askqa">
   <div class="q-box qu-borderAll qu-borderRadius--small qu-borderColor--raised qu-boxShadow--small qu-mb--small qu-hover--borderColor--gray_medium qu-bg--raised" style="box-sizing: border-box;">
     <div class="q-box" style="box-sizing: border-box; position: relative;">
