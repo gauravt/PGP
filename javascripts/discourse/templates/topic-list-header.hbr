@@ -1,4 +1,4 @@
-{{mount-widget widget="banner_mobile"}}
+{{mount-widget widget="banner"}}
 {{#unless user}}
 <p>{{firstname}} {{lastname}}</p>
 <div id="askqa">
