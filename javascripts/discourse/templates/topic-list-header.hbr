@@ -1,5 +1,5 @@
 <script type="text/x-handlebars">
-{{mount-widget widget="banner"}}
+{{mount-widget widget="banner_mobile"}}
 </script>
 {{#unless user}}
 <p>{{firstname}} {{lastname}}</p>
