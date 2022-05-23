@@ -48,7 +48,7 @@ api.createWidget("askqa", {
   },
 });
 
-api.createWidget('increment-button', {
+api.createWidget('ask2', {
             tagName: 'button',
 
             defaultState() {
@@ -60,14 +60,14 @@ api.createWidget('increment-button', {
             },
 
             click() {
-                this.state.clicks++;
+               $('#create-topic').click();
             }
         });
 
 </script>
 
-<script type='text/x-handlebars' data-template-name='/connectors/above-footer/increment-button'>
-    {{mount-widget widget="increment-button" }}
+<script type='text/x-handlebars' data-template-name='/connectors/before-topic-list/ask2'>
+    {{mount-widget widget="ask2" }}
 </script>
 
 <script type='text/x-handlebars' data-template-name=/connectors/before-topic-list/ask'>
