@@ -14,7 +14,7 @@ let currentLocale = I18n.currentLocale();
 I18n.translations[currentLocale].js.custom_modal_title ="My custom modal";
 const showModal = require("discourse/lib/show-modal").default;
 const h = require("virtual-dom").h;
-api.createWidget("button", {
+api.createWidget("modal-button", {
   tagName: "button.btn.btn-primary",
   html(arg) {
     return arg;
@@ -48,9 +48,27 @@ api.createWidget("askqa", {
   },
 });
 
+api.createWidget('increment-button', {
+            tagName: 'button',
+
+            defaultState() {
+                return { clicks: 0 };
+            },
+
+            html(attrs, state) {
+                return `Click me! ${state.clicks} clicks`;
+            },
+
+            click() {
+                this.state.clicks++;
+            }
+        });
+
 </script>
 
-
+<script type='text/x-handlebars' data-template-name='/connectors/above-footer/increment-button'>
+    {{mount-widget widget="increment-button" }}
+</script>
 
 <script type='text/x-handlebars' data-template-name=/connectors/above-footer/increment-button'>
 <div id="askqa">
