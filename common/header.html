@@ -14,7 +14,7 @@ let currentLocale = I18n.currentLocale();
 I18n.translations[currentLocale].js.custom_modal_title ="My custom modal";
 const showModal = require("discourse/lib/show-modal").default;
 const h = require("virtual-dom").h;
-api.createWidget("action-link", {
+api.createWidget("modal-button", {
   tagName: "button.btn.btn-primary",
   html(arg) {
     return arg;
