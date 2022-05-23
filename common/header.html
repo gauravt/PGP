@@ -11,8 +11,8 @@
   });
  
 let currentLocale = I18n.currentLocale();
-//I18n.translations[currentLocale].js.custom_modal_title ="My custom modal";
-//const showModal = require("discourse/lib/show-modal").default;
+I18n.translations[currentLocale].js.custom_modal_title ="My custom modal";
+const showModal = require("discourse/lib/show-modal").default;
 const h = require("virtual-dom").h;
 api.createWidget("modal-button1", {
   tagName: "button.btn.btn-primary",
